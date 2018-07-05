@@ -223,7 +223,7 @@ public class SBCardPopupViewController: UIViewController {
         
         containerView.translatesAutoresizingMaskIntoConstraints = false
         
-        let sideMargin = CGFloat(20)
+        let sideMargin = CGFloat(40)
         let verticalMargins = CGFloat(20)
         
         let left = NSLayoutConstraint(item: containerView,
