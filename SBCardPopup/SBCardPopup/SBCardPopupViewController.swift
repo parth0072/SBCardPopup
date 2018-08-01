@@ -41,6 +41,10 @@ public class SBCardPopupViewController: UIViewController {
     public func show(onViewController viewController: UIViewController) {
         
         self.modalPresentationStyle = .overCurrentContext
+        self.providesPresentationContextTransitionStyle = true
+        self.definesPresentationContext = true
+        self.modalPresentationStyle = UIModalPresentationStyle.custom
+        self.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         viewController.present(self, animated: false, completion: nil)
     }
     
